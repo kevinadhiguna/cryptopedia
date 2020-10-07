@@ -1,6 +1,8 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Cryptopedia
 
-## Available Scripts
+A Cryptocurrency tracker app that presents the latest cryptocurrency rate.
+
+## How to Run :
 
 In the project directory, you can run:
 
