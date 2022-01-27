@@ -4,13 +4,15 @@ import Axios from "axios";
 
 import Coin from "./Coin";
 
+const COINGECKO_BASE_URL = process.env.REACT_APP_COINGECKO_BASE_URL;
+
 function App() {
 	const [coins, setCoins] = useState([]);
 	const [search, setSearch] = useState("");
 
 	useEffect(() => {
 		Axios.get(
-			"https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=100&page=1&sparkline=false"
+			`${COINGECKO_BASE_URL}/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=100&page=1&sparkline=false`
 		)
 			.then((res) => {
 				setCoins(res.data);
