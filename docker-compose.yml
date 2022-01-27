@@ -4,5 +4,6 @@ services:
   cryptopedia:
     build: .
     container_name: cryptopedia_ctr
+    stdin_open: true
     ports:
       - 3000:3000
