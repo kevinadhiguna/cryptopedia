@@ -1,7 +1,8 @@
 version: '3.8'
 
 services:
-  build: .
-  container_name: cryptopedia_ctr
-  ports:
-    - 3000:3000
+  cryptopedia:
+    build: .
+    container_name: cryptopedia_ctr
+    ports:
+      - 3000:3000
